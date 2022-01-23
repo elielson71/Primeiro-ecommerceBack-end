@@ -4,7 +4,7 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "dev": "ts-node-dev src/server.ts",
+    "dev": "nodemon src/server.ts",
     "typeorm": "ts-node-dev ./node_modules/typeorm/cli.js migration:run",
     "typeormC": "ts-node-dev ./node_modules/typeorm/cli.js migration:create -n CreateCategory"
   },
@@ -12,6 +12,7 @@
     "@types/express": "^4.17.13",
     "@types/node": "^17.0.8",
     "@types/uuid": "^8.3.1",
+    "nodemon": "^2.0.15",
     "ts-node-dev": "^1.1.8",
     "typescript": "^4.3.5"
   },

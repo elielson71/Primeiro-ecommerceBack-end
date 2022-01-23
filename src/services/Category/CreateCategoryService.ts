@@ -14,7 +14,6 @@ class CreateCategoryservice {
         const newCategory = categoryRepository.create(category)
 
         await categoryRepository.save(newCategory);
-
         return newCategory;
     }
 }
